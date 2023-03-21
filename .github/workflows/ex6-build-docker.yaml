@@ -26,5 +26,5 @@ jobs:
         - name: docker
           shell: bash
           run: |
-            docker build .github/workflows/test.dockerfile
+            docker build -f .github/workflows/test.dockerfile
     
