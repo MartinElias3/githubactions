@@ -27,7 +27,7 @@ jobs:
     needs: run-npm-install
     steps:
         - name: Cache
-          uses: actions/cache@v2.1.8
+          uses: actions/cache/restore@v2.1.8
           with:
             path: ./node_modules
             key: ${{ runner.os }}-${{ hashFiles('**/lockfiles') }}
