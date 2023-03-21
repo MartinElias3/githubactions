@@ -4,12 +4,12 @@ on:
   pull_request:
     branches:
       - main
-
-call-workflow-passing-data:
-    uses: MartinElias3/githubactions/.github/workflows/ex1.yml@main
-    with:
-      config-path: .github/labeler.yml
-    version:
-      node: 14
+jobs:
+  call-workflow-passing-data:
+      uses: MartinElias3/githubactions/.github/workflows/ex1.yml@main
+      with:
+        config-path: .github/labeler.yml
+      version:
+        node: 14
 
   
