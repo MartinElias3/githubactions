@@ -1,4 +1,4 @@
-name: npm install
+name: npm test
 on: 
   workflow_dispatch:
                
@@ -10,6 +10,4 @@ jobs:
     - uses: actions/setup-node@v3
     with:
     node-version: lts/*
-    - run: npm install   
-  
-   
+    - run: npm install 
