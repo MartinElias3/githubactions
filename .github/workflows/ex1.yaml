@@ -1,10 +1,9 @@
-name: npm test
+name: npm install
 on: 
   workflow_dispatch:
                
 jobs:
   job1:
-  name: npm install
     runs-on: ubuntu-latest
     steps: 
     - uses: actions/checkout@v3
