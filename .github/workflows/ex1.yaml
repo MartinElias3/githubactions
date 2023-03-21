@@ -4,6 +4,7 @@ on:
     inputs:
       version:
         node:
+          type: string
           required: true
 
 jobs:

@@ -6,6 +6,6 @@ jobs:
   call-workflow-passing-data:
       uses: .github/workflows/ex1.yaml
       with: 
-        version-node: 14
+        version-node: "14"
 
   
