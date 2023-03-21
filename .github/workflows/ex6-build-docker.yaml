@@ -26,5 +26,5 @@ jobs:
         - name: docker
           shell: bash
           run: |
-            docker build -t ${{ github.sha }}
+            docker build .github/workflows/test.dockerfile
     
