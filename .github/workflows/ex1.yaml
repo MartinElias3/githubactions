@@ -2,12 +2,9 @@ name: reusable workflow
 on: 
    workflow_call:
     inputs:
-      config-path:
-        required: true
-        type: string
-    version:
-      node:
-        required: true
+      version:
+        node:
+          required: true
 
 jobs:
   run-npm-test:
