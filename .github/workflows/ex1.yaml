@@ -25,9 +25,4 @@ jobs:
             node -v
             npm install
             npm test
-  call-workflow-passing-data:
-    uses: MartinElias3/githubactions/.github/workflows/ex1.yml@main
-    with:
-      config-path: .github/labeler.yml
-    version:
-      node: 14
+  
