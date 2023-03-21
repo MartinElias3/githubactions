@@ -4,15 +4,13 @@ on:
                
 jobs:
   job1:
+  name: npm install
     runs-on: ubuntu-latest
     steps: 
-      # TO COMPLETE   
-  job2:
-    name: npm install
-    steps:
     - uses: actions/checkout@v3
     - uses: actions/setup-node@v3
     with:
     node-version: lts/*
-    - run: npm install
+    - run: npm install   
+  
    
