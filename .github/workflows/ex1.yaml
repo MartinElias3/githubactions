@@ -3,9 +3,8 @@ on:
    workflow_call:
     inputs:
       version:
-        node:
-          type: string
-          required: true
+        type: string
+        required: true
 
 jobs:
   run-npm-test:
@@ -16,7 +15,7 @@ jobs:
         - name : setup node
           uses: actions/setup-node@v3
           with:
-            node-version: ${{ version.node }}
+            node-version: ${{ version }}
         - name: run test
           shell: bash
           run: |
